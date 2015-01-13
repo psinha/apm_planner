@@ -495,7 +495,7 @@ void Radio3DRSettings::readData()
 
     case readLocalFrequency:{
         if(currentLine.toInt() > 0){
-            QLOG_DEBUG() << "Read Local Freq:" << currentLine.toInt();
+            QLOG_DEBUG() << "Read Local Freq:" << currentLine.sprintf("0x%x",currentLine.toInt());
             emit updateLocalStatus(tr("read local radio frequency"));
             m_localRadio.setRadioFreqCode(currentLine.toInt());
             readLocalSettingsStrings();

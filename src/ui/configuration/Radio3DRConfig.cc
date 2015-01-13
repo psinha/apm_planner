@@ -576,8 +576,8 @@ void Radio3DRConfig::setupFrequencyComboBox(QComboBox &comboBox, int freqCode )
         break;
     case FREQ_433:
         minFreq = 414000;
-        maxFreq = 454000;
-        freqStepSize = 100;
+        maxFreq = 460000;
+        freqStepSize = 50;
         break;
     case FREQ_868:
         minFreq = 849000;
